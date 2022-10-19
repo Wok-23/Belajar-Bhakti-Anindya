@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    	<link rel="stylesheet" type="text/css" href="#">
+		<title>Kelompok HTML</title>
+	</head>
+	<header>
+		
+	</header>
+	<body>
+		<h2 align="center">Form Register Mahasiswa</h2>
+		
+	<form>
+			<table align="center" cellpadding= "10px">
+			
+			<!-- First name -->
+			<tr>
+				<td>First Name</td>
+				<td><input type="text" name="FirstName" max length="50" placeholder="Nama Depan"/></td>
+			</tr>
+			<!-- Last name -->
+			<tr>
+				<td>Last Name</td>
+				<td><input type="text" name="LastName" max length="50" placeholder="Nama Belakang"/></td>
+			</tr>
+			<!-- Mobile Number -->
+			<tr>
+				<td>Mobile Number</td>
+				<td><input type="text" name="Mobilenumber" max length="50" placeholder="+62 8123456789"/></td>
+			</tr>
+			<!-- Email ID -->
+			<tr>
+				<td>Email ID</td>
+				<td><input type="text" name="EmailID" size="30" max length="50" placeholder="name@example.com"/></td>
+			</tr>
+			
+			<!-- Address -->
+			<tr>
+				<td>Address</td>
+				<td><textarea name="Address" rows="8" cols="50"></textarea></td>
+			</tr>
+			
+			<!-- Gender -->
+			<tr>
+				<td>Gender</td>
+				<td>
+					<input type="radio" name="gender" value="Male"/>Male
+					<input type="radio" name="gender" value="Female"/>female
+				</td>
+			</tr>
+			
+			<!-- Date Of Birth -->
+			<tr>
+				<td>Date Of Birth</td>
+				<td>
+					<select name="BirthDay" id="Birth_Day">
+					<option value="-1">Day:</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">31</option>
+					<option value="31">31</option>
+					<option value="Lupa">Lupa</option>
+					</select>
+					
+					<select name="BirthdayMonth" id="BirthdayMonth">
+					<option value="januari">Month:</option>
+					<option value="Januari">Januari</option>
+					<option value="Febuari">Febuari</option>
+					<option value="Maret">Maret</option>
+					<option value="April">April</option>
+					<option value="Mei">Mei</option>
+					<option value="Juni">Juni</option>
+					<option value="Juli">Juli</option>
+					<option value="Agustus">Agustus</option>
+					<option value="September">September</option>
+					<option value="	Oktober">Oktober</option>
+					<option value="November">November</option>
+					<option value="Desember">Desember</option>
+					</select>
+					
+					<select name="BirthdayYear" id="Birthday_Year">
+					<option value="2019">Year:</option>
+					<option value="2019">2019</option>
+					<option value="2018">2018</option>
+					<option value="2017">2017</option>
+					<option value="2016">2016</option>
+					<option value="2015">2015</option>
+					<option value="2014">2014</option>
+					<option value="2013">2013</option>
+					<option value="2012">2012</option>
+					<option value="2011">2011:</option>
+					<option value="2010">2010</option>
+					<option value="2009">2009</option>
+					<option value="2008">2008</option>
+					<option value="2007">2007</option>
+					<option value="2006">2006</option>
+					<option value="2005">2005</option>
+					<option value="2004">2004</option>
+					<option value="2003">2003</option>
+					<option value="2005">2002</option>
+					<option value="2004">2001</option>
+					<option value="2003">2000</option>
+					</select>
+					
+					
+					
+				</td>	
+			</tr>
+			
+			<!-- Hobies -->
+			<tr>
+				<td>Hobies</td>
+				<td>
+					<input type="checkbox" name="HobbyDrawing" value="Drawing"/>Drawing
+					<input type="checkbox" name="HobbyProgammer" value="Progammer"/>Progammer
+					<input type="checkbox" name="HobbyDesain" value="Desain"/>Desain
+					<input type="checkbox" name="HobbyWebDesain" value="WebDesain"/>WebDesain
+				</td>
+			</tr>
+			
+			<!-- Qualification -->
+			<tr>
+				<td>Qualification</td>
+				<td>
+					<input type="checkbox" name="SD" value="SD"/>SD</br>
+					<input type="checkbox" name="SMP" value="SMP"/>SMP</br>
+					<input type="checkbox" name="SMA" value="SMA"/>SMA</br>
+					<input type="checkbox" name="Gawe" value="Gawe"/>Gawe</br>
+				</td>
+			</tr>
+			<!-- Submit and Reset -->
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit"value="kirim" />
+					<input type="reset" value="ulang" />
+				</td>
+			</tr>	
+			
+		</table>
+		
+	</form>
+	
+	</body>
+	<footer>
+	</footer>
+</html>

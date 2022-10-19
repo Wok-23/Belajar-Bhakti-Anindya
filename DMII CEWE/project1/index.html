@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="flexslider.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<title>Kota Tangerang</title>
+</head>
+<body>
+	<header>
+		<nav class="navigasi-wrapper" id="nav">
+				<div class="logo">
+					<img src="awe.png">
+				</div>
+				<ul class="menu">
+					<li class="active"><a href="index.html" class="navigasi">Home</a></li>
+					<li><a href="index2.html" class="navigasi">Explore</a></li>
+					<li><a href="index4.html" class="navigasi">Event</a></li>
+				</ul>
+
+				<form>
+					<input type="search" placeholder="search...">
+				</form>
+				<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+			</div>
+		</nav>
+		
+	</header>
+	<section> 
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img src="cf765af0-9aa4-4793-8505-3ba1d9c736e0.jpg" alt="">
+					</li>
+					<li>
+						<img src="044e219f-93cf-4f50-94bc-dbeaa99df97c.jpg" alt="">
+					</li>
+					<li>
+						<img src="3b704a6f-1ca3-4e08-85fb-8028a1e6168b.jpg" alt="">
+					</li>
+					<li>
+						<img src="puspem-kota-tangerang.jpg" alt="">
+					</li>
+				</ul>
+			</div>
+		</section>
+	<section id="contact">
+	<div class="container">
+		<div class="logo-otsuka">
+			<h1>Explore Tangerang</h1>
+		</div>
+
+		<div class="boxes">
+			<div class="row">
+			<!-- col1 -->
+				<div class="column1" align="right">
+					<div class="box-content1 bgcolor1">
+						<img src="image.png">
+					</div>	
+				</div>
+					<!-- col3 -->
+				<div class="column1">
+					<div class="box-content1 bgcolor1">
+						<h3>Tentang Kota tangerang</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+						<a href="#" class="btn"> Read More </a>
+
+						<br>
+						<br>
+						<br><br>
+
+						<h3>Sejarah Kota tangerang</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+						<a href="#" class="btn"> Read More </a>
+					</div>	
+				</div>
+			</div>
+		</div>
+</div>
+</section>
+
+<section id="video">
+	<div class="video-bg" align="center">
+		<video autoplay muted loop>
+			<source src="Footage Drone Kota Tangerang 2019.mp4" type="video/mp4">
+		</video>
+	</div>
+</section>
+	<footer>
+		<div class="boxes">
+			<div class="row">
+			<!-- col1 -->
+				<div class="column3">
+					<div class="box-content4 bgcolor3">
+					<form>
+						<table cellpadding= "10">
+						<tr>
+							<td>Email ID</td>
+							<td><input type="text" name="EmailID" size="20" max length="50" placeholder="Satrio17gpai@gmail.com"/></td>
+						</tr>
+
+						<tr>
+							<td>Message</td>
+							<td><textarea name="Address" rows="8" cols="50"placeholder="sesuka hati anda"></textarea></td>
+						</tr>
+						<tr>
+							<td colspan="2" align="right">
+							<input type="submit"value="Submit" />
+							</td>
+						</tr>
+					</table>
+				</form>
+					</div>	
+				</div>
+			<!-- col2-->
+				<div class="column3">
+					<div class="box-content4 bgcolor3">
+						<img src="awe.png"><br>
+						<i class="fa-2x fa fa-facebook-official" aria-hidden="true"></i>
+						<i class="fa-2x fa fa-twitter-square" aria-hidden="true"></i>
+						<i class="fa-2x fa fa-instagram" aria-hidden="true"></i>
+						<i class="fa-2x fa fa-youtube-play" aria-hidden="true"></i>
+					</div>	
+				</div>
+			<!-- col3 -->
+				<div class="column3">
+					<div class="box-content4 bgcolor3">
+						<h2>Quick Link</h2>
+						<li><a href="index.html">Home</li>
+						<li><a href="index2.html">Explore</li>
+						<li><a href="index4.html">Event</li>
+						
+					</div>	
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.js"></script>
+		
+		<script src="js/jquery.flexslider.js"></script>
+		
+		<script src="js/flexslider.js"></script>
+		<script type="text/javascript">
+	console.clear();
+		const navSlide= ()=> {
+			const burger = document.querySelector('.burger');
+			const nav = document.querySelector('.menu');
+		const navlinks = document.querySelectorAll('.menu li');
+				
+			burger.addEventListener('click',()=>{
+			nav.classList.toggle('menu-active');
+			});
+		}
+		navSlide();
+</script>
+
+<script type="text/javascript">
+
+	var nav= document.getElementById('nav');
+		window.onscroll = function(){
+			if (window.pageYOffset >100) {
+			nav.style.background = "#004a95";
+			nav.style.boxShadow = "0px 2px 2px #fff";
+			}
+			else{
+			nav.style.background = "transparent"
+			nav.style.boxShadow = "none";
+			}
+		}
+		</script>
+	</body>
+	</html>

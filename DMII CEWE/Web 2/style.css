@@ -1,0 +1,73 @@
+html {
+	background-color: #8ebeb8;
+	font-family: 'open sans', sans-serif;
+}
+
+body {
+	width: 900px;
+	background-color: aqua;
+	margin: 0 auto;
+	padding: 20px;
+	border: 2px dashed #fcf1c6;
+}
+h1{
+		font-size: 40px;
+		color: white;
+		text-shadow: 2px 2px 1px #000;
+		font-family: 'Dancing Script', cursive;
+		text-align: center;
+		
+}
+
+p, li{
+	font-size: 16px;
+	line-height: 2;
+	letter-spacing: 1px;
+	
+}
+.center{
+	text-align: center;
+}
+
+img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+nav{
+	text-align: center;
+	
+}
+
+nav ul{
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	background-color: #708090;
+}
+
+nav li{
+	float: left;
+	
+}
+
+nav li a {
+	display: inline-block;
+	padding: 13px 35px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+
+nav li a:hover{
+	background-color: black;
+}
+
+nav li a.active{
+	background-color:black;
+}
+
+
+
+
