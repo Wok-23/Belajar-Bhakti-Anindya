@@ -1,0 +1,367 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lexend Deca', sans-serif;
+	background-color: #000;
+	
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	min-height:100px;
+	background-color: green;
+	box-shadow: 3px 2px 3px #5DDE30;
+	align-items: center;
+}
+.logo{
+	color: #ffff;
+	text-transform: uppercase;
+}
+
+.menu{
+	display: flex;
+	justify-content: space-around;
+	width: 35%;
+}
+
+.menu li{
+	list-style: none;
+}
+
+.menu li a{
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+}
+
+header {
+	position: center;
+	width: 100%;
+	height: 100vh;
+	background-image:
+	url(mantul.png);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.burger div{
+	width: 25px;
+	height: 5px;
+	background-color: black;
+	font-size: 50px;
+	margin: 5px;
+}
+
+.burger{
+	display: none;
+}
+header .text-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-align: center;
+}
+
+header .text-box h1{
+	color: green;
+	font-size: 5em;
+	font-weight: bold;
+	font-size: italic;
+	text-shadow:  3px 4px 1px #5DDE30;
+}
+	header .text-box h2{
+	color: white;
+	font-size: 3em;
+	font-weight: bold;
+	font-style: italic;
+}
+header .text-box h3{
+	color: white;
+	font-size: 1em;
+}
+header .text-box h3 span{
+	color: green;
+	font-size: 1em;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#about{
+	background-color: black;
+	text-align: center;
+}
+
+.container{
+	width: 100%;
+	max-width: 1600px;
+	height: auto;
+	padding: 50px;
+	margin: 0 auto;
+}
+.box{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#about h2{
+	font-size: 2em;
+	color: green;
+	text-shadow: 3px 2px 1px #5DDE30;
+	font-weight: bold;
+}
+#about .foto-saya{
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	object-fit: cover;
+	background-size: cover;
+}
+#about p{
+	color: white;
+	font-size: 1em;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+.button{
+	background-color: green;
+	padding: 10px;
+	color: #fff;
+	border-radius: 0.5px;
+	text-decoration: none;
+	transition-duration: 1s;
+}
+
+.button:hover{
+	background-color: #fff;
+	color: green;
+}
+.flex{
+	display: flex;
+	justify-content: space-around;
+	padding: 50px;
+}
+#resume {
+	height: auto;
+	width: 100%;
+	position: relative;
+	background-repeat: repeat;
+	background-size: cover;
+	background-color: black;
+}
+.flex-item{
+	width: auto;
+	height: auto;
+	margin: 10px;
+}
+.flex-item1{
+	flex-grow: 0;
+}
+.flex-item2{
+	flex-grow: 2;
+}
+#resume h3{
+	font-size: 2em;
+	color: white;
+}
+#resume h3 span{
+	border-bottom: 2px solid green;
+	padding-bottom: 5px;
+}
+#resume h4{
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+	color: green;
+}
+
+#resume h5{
+	color: green;
+	font-size: 1em;
+	font-style: italic;
+	font-weight: bold;
+	margin-bottom: 5px;
+	letter-spacing: 1px;
+}
+#resume p {
+	font-size: 1em;
+	margin-bottom: 15px;
+	line-height: 2;
+	color: white;
+}
+.skills {
+	width: 100%;
+	padding: 10px;
+	position: relative;
+	color: white;
+}
+
+.skills ul{
+	padding-top: 10px;
+}
+
+.skills ul > li{
+	margin-bottom: 50px;
+	font-size: 1em;
+	position: relative;
+	background : #fff;
+	height: 30px;
+	border-radius: 5px;
+	border: 2px solid grey;
+}
+
+.skills ul> li em{
+	top:-30px;
+	font-size: 1em;
+	position: relative;
+}
+
+.skills ul > li span{
+	height: 26px;
+	background: green;
+	position: absolute;
+}
+
+.corel-draw{
+	width: 40%;
+	animation: corel-draw 1s ease-out;
+}
+
+.html-css{
+	width: 10%;
+	animation: html-css 1s ease-out;
+}
+
+.premierepro{
+	width: 80%;
+	animation: premierepro 1s ease-out;
+}
+
+.photoshop{
+	width: 90%;
+	animation: photoshop 1s ease-out;
+}
+.microsoft{
+	width: 50%;
+	animation: microsoft 1s ease-out;
+}
+
+@keyframes corel-draw {
+	0% {width: 0%;}
+	100% {width: 40%;}
+}
+
+@keyframes html-css {
+	0% {width: 0%;}
+	100% {width: 10%;}
+}
+
+@keyframes premierepro {
+	0% {width: 0%;}
+	100% {width: 80%;}
+}
+
+@keyframes photoshop {
+	0% {width: 0%;}
+	100% {width: 90%;}
+}
+
+@keyframes microsoft {
+	0% {width: 0%;}
+	100% {width: 50%;}
+}
+
+.flex-portfolio{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.flex-portfolio div{
+	margin: 5px;
+	flex-basis: 300px;
+	flex-grow: 1;
+}
+
+.flex-portfolio img{
+	object-fit: cover;
+	object-position: center center;
+	width: 100%;
+	height: 100%;
+	transition: transform 300ms ease-out;
+}
+
+.flex-portfolio img:hover{
+	transform: scale(1.1);
+}
+
+td{
+	color: #000;
+	text-shadow: 3px 2px 1px #fff;
+	padding: 10px;
+}
+
+input[type=text], select, textarea{
+	width: 100%;
+	height: 50px;
+	padding: 15px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+}
+
+input[type=submit]{
+	background-color: #fff;
+	color: #0173a7;
+	padding: 15px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 5px 12px rgba(0,0,0,0.15),
+				0 8px 18px -2px rgba(0,0,0,0.25);
+}
+
+input[type=submit]:active {
+	transform: translateY(2px);
+	box-shadow: 0 2px 2px rgba(0,0,0,0.45);
+}
+
+
+@media screen and (max-width: 768px) {
+	.menu {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	right: 0px;
+	height: 92vh;
+	top: 10vh;
+	width: 45%;
+	align-items: center;
+	background-color: green;
+	transform: translateX(100%);
+	transition: transform 2s ease-in;
+	z-index: 1;
+
+	}
+	.burger{
+	display: block;
+}
+}
+
+.menu-active{
+	transform: translateX(0%);
+	
+}
