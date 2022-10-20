@@ -1,0 +1,133 @@
+body	{
+	font-family: 'Dancing Script', cursive;
+	font-size: 100%;
+	line-height: 165%
+	min-width: 300px;
+
+}
+
+.page-header {
+	text-transform: uppercase;
+	font-size: 3rem;
+	line-height: 1.15em;
+	font-weight: 800;
+	margin-bottom: 0;
+}
+
+.page-sub-header {
+	font-size: 1.4rem;
+	font-weight: 800;
+	padding-bottom: 2rem;
+	border-bottom: 8px solid;
+}
+
+.contacts {
+	font-size: 0.8rem;
+}
+
+.contact-value{
+	margin-left: 0;
+	margin-bottom: 0,4rem;
+}
+
+.cobtact-type{
+	font-weight: 600;
+}
+
+.contact-type, contact-value{
+	line-height: 1.35em;
+}
+
+.sub-header{
+	text-transform: uppercase;
+	font-weight: 800;
+	padding-bottom: 0.5rem;
+	border-bottom: 4px solid;
+	font-size: 1.2rem;
+}
+
+#ringkasan + p{
+	font-style: italic;
+	margin-bottom: 3rem;
+}
+
+.experience-title {
+	font-weight: 800;
+	margin-bottom: 0;
+	margin-top: 3rem;
+}
+
+.experience-meta {
+	margin: 0;
+}
+
+.experience-company {
+	font-weight: 200;
+	border-bottom: 1px solid;
+}
+
+.experience-year {
+	font-style: italic;
+}
+
+.experience-description{
+	font-size: 0.8rem;
+	line-height: 1.5em;
+	margin-top: 0.5rem;
+}
+
+.responsibilities{
+	font-size: 1rem;
+	font-weight: 600;
+	list-style-type: square;
+	padding: 0;
+	line-height: 1.15em;
+}
+
+.education-major{
+	font-weight: 700;
+}
+
+.skills{
+	list-style-type: square;
+	padding: 0;
+}
+
+.skill-name{
+	text-transform: capitalize;
+}
+
+footer{
+	font-size: 0.8em;
+	line-height: 1em;
+	font-weight: 600;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: aqua;
+	box-shadow: 0 0 80px -16px rgba(0,0,0,0,55);
+}
+
+@media screen and (min-width: 80ch) {
+	body {
+		background-color: yellow;
+		max-width: 80ch;
+		margin: 0 auto;
+		position: relative;
+	}
+	.page-header{
+		font-size: 5rem;
+		max-width: 70%;
+	}
+	
+	.contact-wrapper{
+	max-width: 30%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-width: 24ch;
+	}
+}
+
