@@ -1,0 +1,104 @@
+h1{
+	text-align: center;
+	margin-top: 30px;
+	font-size: 40px;
+}
+
+.gallery{
+	height: 80%;
+	width: 100%;
+	display: flex;
+	margin: 5% auto 0;
+	box-sizing: border-box;
+}
+
+.image-box{
+	margin: 0 1%;
+	flex-grow: 1;
+	flex-basis: 0;
+	transition: .5s;
+}
+
+.image-box img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: .5s;
+}
+
+.image-box:hover{
+	flex-basis: 50%;
+}
+
+.active{
+	flex-basis: 50%;
+}
+
+.gallery:hover .active{
+	flex-basis: 0;
+}
+
+.image-box:nth-child(1):hover{
+	flex-basis: 50%;
+}
+/*gallery2*/
+
+.header{
+	margin: 3%;
+	text-align: center;
+}
+
+.header h2,p{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.single{
+	position: relative;
+	overflow: hidden;
+}
+
+.album-img{
+	position: relative;
+	overflow: hidden;
+}
+
+.album-img img{
+	width: 33.3%;
+	transition: .4s;
+}
+
+.single:hover .album-img img{
+	transform: scale(1.5,1.5);
+}
+
+.album-content{
+	height: 80px;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	transition: all .4s;
+}
+
+.single:hover .album-content{
+	height: 150px;
+}
+
+.album-info{
+	transition: all .5s;
+}
+
+.album-info h3{
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
