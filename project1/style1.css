@@ -1,0 +1,130 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.background{
+	background-image: url(unnamed.jpg);
+	width: 100%;
+	height: 115vh;
+	margin-top: -15vh;
+	position: fixed;
+}
+.countdown h1{
+	text-align: center;
+	font-family: 'Impact';
+	font-size: 3.5em;
+	letter-spacing: 2px;
+	color: #18744A;
+	margin-top: 25vh;
+	text-shadow: 1px 2px 3px #F2E39E;
+	animation: h1 3s;
+}
+@keyframes h1{
+	0%{
+		color: #000;
+		margin-bottom: -40px;
+		opacity: 0;
+	}
+
+	30%{
+		letter-spacing: 9px;
+		margin-bottom: -40px;
+		opacity: 50%
+	}
+
+	85%{
+		letter-spacing: 8px;
+		margin-bottom: -40px;
+		opacity: 80%;
+	}
+}
+.countdown img{
+	width: 20%;
+	margin-left: 550px;
+	animation: img 3s;
+}
+
+@keyframes img{
+	0%{
+		opacity: 0;
+	}
+
+	30%{
+		opacity: 20%;
+	}
+
+	85%{
+		opacity: 70%;
+	}
+}
+
+.clock{
+	display: flex;
+	margin-top: 30px;
+	margin-left: 425px;
+}
+
+.clock div{
+	position: relative;
+	width: 100px;
+	height: 110px;
+	line-height: 100px;
+	text-align: center;
+	background-color:#18744A;
+	margin: 0 15px;
+	font-size: 2em;
+	font-weight: 500;
+	border-bottom: 5px solid #F2E39E;
+}
+
+.clock div p{
+	color: #F2E39E;
+}
+
+.order{
+	width: 140px;
+	height: 30px;
+	background-color: #18744A;
+	text-align: center;
+	margin-top: 40px;
+	border-radius: 10px;
+	margin-left: 615px;
+	font-size: 1.5em;
+}
+
+.order a{
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+}
+
+.order:hover{
+	background-color: #F2E39E;
+}
+
+.order a:hover{
+	color: #18744A;
+}
+.link p{
+	text-align: center;
+	margin-top: 12px;
+	font-size: 1em;
+} 
+.link a{
+	color: #fff;
+	font-style: italic;
+	text-align: center;
+
+}
+
+.link a:hover{
+	color: navy;
+}
+
+.clock h3{
+	color: #fff;
+	font-size: 0.8em;
+	margin-top: -65px;
+}

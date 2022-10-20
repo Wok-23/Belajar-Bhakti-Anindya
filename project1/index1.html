@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Countdown</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<div class="background">
+		<div class="countdown">
+			<h1>LOOK FORWARD TO <br>OUR PRESENCE</h1>
+			<img src="Group 11.png">
+		</div>
+		<div class="clock" id="demo">
+			<div><p id="hari"></p>
+				<h3>Days</h3></div>
+			<div><p id="jam"></p>
+				<h3>Hours</h3>
+			</div>
+			<div><p id="menit"></p>
+			<h3>Minute</h3></div>
+			<div><P id="detik"></P>
+			<h3>Seconds</h3></div>
+		</div>
+		<div class="order"><a href="https://www.ticketmaster.com/">Order Now!</a></div>
+		<div class="link">
+			<p><a href="index.html">www.EventX.com</a></p>
+		</div>
+	</div>
+
+	<script>
+// Mengatur waktu akhir perhitungan mundur
+var countDownDate = new Date("Feb 29, 2020 17:55:55").getTime();
+var hariEl = document.getElementById('hari');
+var jamEl = document.getElementById('jam');
+var menitEl = document.getElementById('menit');
+var detikEl = document.getElementById('detik');
+
+// Memperbarui hitungan mundur setiap 1 detik
+var x = setInterval(function() {
+
+  // Untuk mendapatkan tanggal dan waktu hari ini
+  var now = new Date().getTime();
+    
+  // Temukan jarak antara sekarang dan tanggal hitung mundur
+  var distance = countDownDate - now;
+    
+  // Perhitungan waktu untuk hari, jam, menit dan detik
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Keluarkan hasil dalam elemen dengan id = "demo"
+    hariEl.innerHTML = days;
+    jamEl.innerHTML = hours;
+    menitEl.innerHTML = minutes;
+    detikEl.innerHTML = seconds;
+  // Jika hitungan mundur selesai, tulis beberapa teks 
+  if (distance < 0) {
+    clearInterval(x);
+    // document.getElementById("").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</body>
+</html>
